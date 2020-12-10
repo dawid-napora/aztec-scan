@@ -1,0 +1,44 @@
+{
+  "name": "aztec-scan",
+  "version": "1.0.0",
+  "description": "WIP Aztec Scan - an awesome Aztec code scanner.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dawnap/aztec-scan.git"
+  },
+  "keywords": ["Aztec", "Code", "Scan", "Scanner", "Barcode"],
+  "author": "Dawid Napora <dawid@napora.dev> (https://napora.dev)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dawnap/aztec-scan/issues"
+  },
+  "homepage": "https://github.com/dawnap/aztec-scan#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.19",
+    "@typescript-eslint/eslint-plugin": "^4.9.1",
+    "@typescript-eslint/parser": "^4.9.1",
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-prettier": "^3.2.0",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.2"
+  }
+}
