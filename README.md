@@ -1,3 +1,4 @@
+<p align="center"><a href="https://github.com/dawnap/aztec-scan"><img src=".github/logo.png" width="128" height="128"></a></p>
 <h1 align="center">Aztec Scan</h1>
 <p align="center">
   <img alt="NPM" src="https://img.shields.io/npm/l/aztec-scan?style=flat-square">
