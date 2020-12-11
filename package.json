@@ -1,6 +1,6 @@
 {
   "name": "aztec-scan",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "WIP Aztec Scan - an awesome Aztec code scanner.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -11,7 +11,7 @@
     "test": "jest --config jestconfig.json",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "lint": "eslint --ext \".js,.ts,.tsx\" src",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
@@ -22,9 +22,9 @@
     "type": "git",
     "url": "git+https://github.com/dawnap/aztec-scan.git"
   },
-  "keywords": ["Aztec", "Code", "Scan", "Scanner", "Barcode"],
+  "keywords": ["aztec", "code", "scan", "scanner", "barcode"],
   "author": "Dawid Napora <dawid@napora.dev> (https://napora.dev)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dawnap/aztec-scan/issues"
   },

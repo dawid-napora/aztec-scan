@@ -1,5 +1,10 @@
-import AztecScan from '..'
+import AztecScan from '..';
 
 test('AztecScan', () => {
-  expect(new AztecScan()).toBeInstanceOf(AztecScan);
+  const aztecScan = new AztecScan();
+  expect(aztecScan).toBeInstanceOf(AztecScan);
+
+  aztecScan.enumerateDevices().then((devices) => {
+    expect(devices).toBeDefined();
+  });
 });

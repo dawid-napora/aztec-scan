@@ -1,5 +1,2 @@
-export default class AztecScan {
-  public fromImage(image: HTMLImageElement): string {
-    return image.src
-  }
-}
+export { default } from './AztecScan';
+export { default as AztecScanResult } from './AztecScanResult';
