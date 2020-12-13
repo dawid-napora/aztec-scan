@@ -11,4 +11,20 @@
   <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/dawnap/aztec-scan?style=flat-square">
 </p>
 
-Do not use this module as it isn't ready yet!
+## What is Aztec Scan?
+Aztec Scan is an open-source [Aztec Code](https://en.wikipedia.org/wiki/Aztec_Code) image processing library implemented in TypeScript to use in browser environment.
+
+**Note:** This project is work-in-progress and is not yet ready for production use.
+
+## Installation
+
+`npm install aztec-scan --save`
+
+or
+
+`yarn add aztec-scan`
+
+## Browser Support
+
+This library uses [MediaDevices](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices) web API to scan using camera, which is [not supported by older browsers](https://caniuse.com/mdn-api_mediadevices).
+
