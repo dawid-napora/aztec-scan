@@ -1,11 +1,12 @@
-import AztecScanResult from './AztecScanResult';
+import AztecScanBrowser from './AztecScanBrowser';
 
 export interface AztecScanOptions {
-  allowInvalid: boolean;
+  allowInvalid?: boolean;
+  timeBetweenScansMillis?: number;
 }
 
 /** AztecScan class */
-export default class AztecScan {
+export default class AztecScan extends AztecScanBrowser {
   private options: AztecScanOptions = {
     allowInvalid: false,
   };
@@ -17,6 +18,7 @@ export default class AztecScan {
    * @param {AztecScanOptions} options - Options for AztecScan instance
    */
   constructor(options?: AztecScanOptions) {
+    super(options?.timeBetweenScansMillis);
     if (options) this.options = options;
   }
 
@@ -55,10 +57,10 @@ export default class AztecScan {
    * @todo Scan from image element
    * @since Future function
    */
-  public fromImage(): Promise<AztecScanResult> {
+  public fromImage(): Promise<void> {
     return new Promise((resolve) => {
       // TODO: Scan from image
-      resolve(new AztecScanResult());
+      resolve();
     });
   }
 
@@ -66,10 +68,10 @@ export default class AztecScan {
    * @todo Scan from canvas element
    * @since Future function
    */
-  public fromCanvas(): Promise<AztecScanResult> {
+  public fromCanvas(): Promise<void> {
     return new Promise((resolve) => {
       // TODO: Scan from canvas
-      resolve(new AztecScanResult());
+      resolve();
     });
   }
 
@@ -77,10 +79,10 @@ export default class AztecScan {
    * @todo Scan from video element
    * @since Future function
    */
-  public fromVideo(): Promise<AztecScanResult> {
+  public fromVideo(): Promise<void> {
     return new Promise((resolve) => {
       // TODO: Scan from video
-      resolve(new AztecScanResult());
+      resolve();
     });
   }
 }

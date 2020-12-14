@@ -1,6 +1,6 @@
 {
   "name": "aztec-scan",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "WIP Aztec Scan - an awesome Aztec code scanner.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -22,7 +22,13 @@
     "type": "git",
     "url": "git+https://github.com/dawnap/aztec-scan.git"
   },
-  "keywords": ["aztec", "code", "scan", "scanner", "barcode"],
+  "keywords": [
+    "aztec",
+    "code",
+    "scan",
+    "scanner",
+    "barcode"
+  ],
   "author": "Dawid Napora <dawid@napora.dev> (https://napora.dev)",
   "license": "MIT",
   "bugs": {
@@ -40,5 +46,9 @@
     "prettier": "^2.2.1",
     "ts-jest": "^26.4.4",
     "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "@zxing/browser": "^0.0.5",
+    "@zxing/library": "^0.18.3"
   }
 }
