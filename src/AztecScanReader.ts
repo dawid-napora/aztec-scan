@@ -1,3 +1,3 @@
-import AztecReader from '@zxing/library/esm/core/aztec/AztecReader';
+import { AztecCodeReader } from '@zxing/library';
 
-export default class AztecScanReader extends AztecReader {}
+export default class AztecScanReader extends AztecCodeReader {}

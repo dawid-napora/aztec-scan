@@ -7,7 +7,7 @@ export interface AztecScanOptions {
 
 /** AztecScan class */
 export default class AztecScan extends AztecScanBrowser {
-  private options: AztecScanOptions = {
+  private aztecScanOptions: AztecScanOptions = {
     allowInvalid: false,
   };
 
@@ -18,8 +18,8 @@ export default class AztecScan extends AztecScanBrowser {
    * @param {AztecScanOptions} options - Options for AztecScan instance
    */
   constructor(options?: AztecScanOptions) {
-    super(options?.timeBetweenScansMillis);
-    if (options) this.options = options;
+    super();
+    if (options) this.aztecScanOptions = options;
   }
 
   /**
