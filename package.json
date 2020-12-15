@@ -1,6 +1,6 @@
 {
   "name": "aztec-scan",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "WIP Aztec Scan - an awesome Aztec code scanner.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
